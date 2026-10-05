@@ -1,0 +1,506 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6f8;
+    color: #222;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 70px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+
+.nav-links a:hover {
+    color: #1769e0;
+}
+
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.username {
+    background: #edf6ff;
+    color: #3185cf;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+.logout-btn {
+    border: none;
+
+    background: #fff0f0;
+    color: #df4b4b;
+
+    padding: 9px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main-container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 35px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   LEFT COLUMN
+========================= */
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   RIGHT COLUMN
+========================= */
+
+.right-column {
+    display: flex;
+}
+
+
+/* =========================
+   COMMON CARD
+========================= */
+
+.card {
+    background: white;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 14px;
+
+    padding: 20px;
+}
+
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   ADDED ITEMS
+========================= */
+
+.added-card {
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+th {
+    text-align: left;
+
+    font-size: 12px;
+
+    padding: 9px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+td {
+    font-size: 13px;
+
+    padding: 10px 9px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+#emptyRow td {
+    text-align: center;
+
+    color: #888;
+
+    height: 150px;
+}
+
+
+.total-section {
+    margin-top: auto;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #eeeeee;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+/* =========================
+   BOOK NOW
+========================= */
+
+.booking-card {
+    min-height: 330px;
+}
+
+
+.booking-card label {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 6px;
+}
+
+
+.booking-card input {
+    width: 100%;
+
+    height: 45px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 7px;
+
+    padding: 0 12px;
+
+    margin-bottom: 15px;
+
+    outline: none;
+
+    font-size: 13px;
+}
+
+
+.booking-card input:focus {
+    border-color: #1769e0;
+}
+
+
+.input-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+.book-btn {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #1769e0;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.book-btn:hover {
+    background: #0759c9;
+}
+
+
+#bookingMessage {
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-card {
+    width: 100%;
+
+    min-height: 700px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.description {
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* =========================
+   SERVICE AREA
+========================= */
+
+.service-area {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.service-image {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   SERVICE NAME / PRICE
+========================= */
+
+.service-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 16px;
+}
+
+
+#serviceName {
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+#servicePrice {
+    color: #164aa2;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   SERVICE BUTTONS
+========================= */
+
+.service-buttons {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: auto;
+
+    padding-top: 25px;
+}
+
+
+.service-buttons button {
+    height: 48px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+/* SKIP */
+
+.skip-btn {
+    background: #fff0f0;
+
+    color: #d9534f;
+}
+
+
+/* ADD */
+
+.add-btn {
+    background: #edf8ed;
+
+    color: #4c934c;
+}
+
+
+.skip-btn:hover {
+    background: #ffe2e2;
+}
+
+
+.add-btn:hover {
+    background: #dff2df;
+}
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.bottom-info {
+    margin-top: 25px;
+
+    color: #36527c;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .main-container {
+        width: 94%;
+    }
+
+}
